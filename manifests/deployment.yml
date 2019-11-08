@@ -1,0 +1,16 @@
+apiVersion : apps/v1beta1
+kind: Deployment
+metadata:
+  name: rohitbatrasamplerb 
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: rohitbatrasamplerb 
+    spec:
+      containers:
+        - name: rohitbatrasamplerb 
+          image: desattir.azurecr.io/rohitbatrasamplerb
+          ports:
+          - containerPort: 80
